@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Estudiantes</title>
+    <script src="script.js"></script>
+    <link rel='stylesheet' href='https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css'>
+    <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+</head>
+<body style="background-color: deeppink;">
+
+    <h1 style="font-style: italic;">Tabla de estudiantes</h1>
+    <!-- <span> 
+        <button onclick="getStudents()">Mostrar Alumnos en consola</button>
+        <button onclick="console.clear()">Limpiar Consola</button>
+        </span> -->
+    <table style = 'border: 1px solid; background-color: aqua;' >
+        <thead style = "background-color: aqua;">
+            <th style = 'text-align: left;'>ID</th>
+            <th style = 'text-align: left;'>DNI</th>
+            <th style = 'text-align: left;'>Apellido</th>
+            <th style = 'text-align: left;'>Nombre</th>
+            <th style = 'text-align: left;'>Email</th>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td><input id = 'dni' /></td>
+                <td><input id = 'lastName' /></td>
+                <td><input id = 'firstName' /></td>
+                <td><input id = 'email' /></td>
+                <td colspan = '2' style = 'text-align: center'><button onclick= 'newStudent()'>Agregar</button>
+        </tfoot>
+    </table>
+    <div id='popUp'>
+        <table style = "background-color: aqua;">
+            <tr>
+                <td><label for='id2' style='font-weight: bold'>Id</label></td>
+                <td><input name='id2' style='text-align: right' readonly /></td>
+            </tr>
+            <tr>
+                <td><label for='dni2' style='font-weight: bold'>Dni</label></td>
+                <td><input name='dni2' style='text-align: right' /></td>
+            </tr>
+            <tr>
+                <td><label for='lastName2' style='font-weight: bold'>Last Name</label></td>
+                <td><input name='lastName2' style='text-align: right' /></td>
+            </tr>
+            <tr>
+                <td><label for='firstName2' style='font-weight: bold'>First Name</label></td>
+                <td><input name='firstName2' style='text-align: right' /></td>
+            </tr>
+            <tr>
+                <td><label for='email2' style='font-weight: bold'>Email</label></td>
+                <td><input name='email2' style='text-align: right' /></td>
+            </tr>
+            <tr>
+                <td colspan='2' style='text-align: center'><button onclick='updateStudent()'>Actualizar</button></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+
+</html>
